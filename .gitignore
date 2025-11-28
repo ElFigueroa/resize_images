@@ -1,0 +1,10 @@
+# Entornos
+__pycache__/
+*.pyc
+
+# Carpetas de entrada/salida de imágenes
+input_images/
+output_images/
+
+# Virtual env
+venv/
