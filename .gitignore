@@ -8,3 +8,5 @@ output_images/
 
 # Virtual env
 venv/
+input/
+output/
