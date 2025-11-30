@@ -8,8 +8,8 @@ from utils import get_first_five_letters, ensure_directory
 class ImageProcessor:
     """Procesa imágenes: resize, renombrado y guardado."""
     
-    TARGET_WIDTH = 720
-    TARGET_HEIGHT = 480
+    TARGET_WIDTH = 210
+    TARGET_HEIGHT = 210
     OUTPUT_FORMAT = 'JPEG'
     OUTPUT_EXTENSION = '.jpg'
     
@@ -48,7 +48,7 @@ class ImageProcessor:
         scale_h = self.TARGET_HEIGHT / orig_height
         
         # Usar la escala menor para mantener la imagen completa
-        scale = min(scale_w, scale_h)
+        scale = max(scale_w, scale_h)
         
         # Calcular nuevas dimensiones escaladas
         new_width = int(orig_width * scale)
